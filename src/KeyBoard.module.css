@@ -1,0 +1,22 @@
+.keyBtn {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  color: black;
+  border: 3px solid black;
+}
+
+.keyBtn.active {
+  background: hsl(200, 100%, 50%);
+  color: white;
+}
+
+.keyBtn.inactive {
+  opacity: 0.3;
+}
+
+.keyBtn:hover:not(:disabled) .keyBtn:focus:not(:disabled) {
+  background: hsl(200, 100%, 75%);
+}
